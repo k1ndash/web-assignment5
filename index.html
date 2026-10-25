@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5 - JavaScript Basics</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <h1>My Profile</h1>
+        <p class="subtitle">Assignment 5 - JavaScript Basics</p>
+
+        <section>
+            <h2>Part 1: Profile Information</h2>
+            <div id="profileDetails">
+                <h3>Profile Data</h3>
+                <p><strong>Name:</strong> <span id="profileName"></span></p>
+                <p><strong>Birth year:</strong> <span id="profileBirthYear"></span></p>
+                <p><strong>Developer:</strong> <span id="profileDeveloper"></span></p>
+            </div>
+            <div id="calculations">
+                <h3>Calculations</h3>
+                <p><strong>Age:</strong> <span id="profileAge"></span></p>
+                <p><strong>Number of hobbies:</strong> <span id="hobbyCount"></span></p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Part 2: Create / Update Profile</h2>
+            <form id="profileForm">
+                <label for="username">Username</label>
+                <input type="text" id="username" value="Tolendi Meiirzhan" required>
+
+                <label for="birthYear">Birth Year</label>
+                <input type="number" id="birthYear" value="2007" min="1900" required>
+
+                <button type="submit">Create / Update Profile</button>
+            </form>
+            <p id="profileMessage" class="message" aria-live="polite"></p>
+        </section>
+
+        <section>
+            <h2>Part 3: My Hobbies</h2>
+            <ul id="hobbyList"></ul>
+
+            <label for="newHobby">New hobby</label>
+            <input type="text" id="newHobby" placeholder="Enter a hobby">
+
+            <div class="buttons">
+                <button type="button" id="addButton">Add Item</button>
+                <button type="button" id="removeButton" class="remove">Remove Item</button>
+            </div>
+            <p id="hobbyMessage" class="message" aria-live="polite"></p>
+        </section>
+    </main>
+</body>
+</html>
